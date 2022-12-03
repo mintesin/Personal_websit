@@ -1,0 +1,262 @@
+body {
+  background-color: #112533;
+   /* background-color: #0e100e; */
+  margin:0;
+  padding: 0%;
+
+  
+  
+}
+p {
+  font-style:'Montserrat';
+}
+@media only screen and (max-width: 1000px) {
+  * {
+    font-size:1.4vh;
+  
+  }
+  p{
+    font-size:2vh;
+  }
+  h3{
+    font-size:2vh;
+  }
+} 
+td{
+
+   font-size: medium;
+   padding: 2%;
+   margin-bottom: 2%;
+
+   position: relative;
+   left: 6%;
+
+}
+
+
+ 
+table {
+
+  
+  margin: auto;
+  
+}
+.menu {
+  color: #f1f1f1;
+}
+.navbar-toggler-icon{
+  color: #f1f1f1;
+}
+.menu:hover{
+  padding:5% ;
+  color:yellowgreen;
+  font-size:2rem ;
+
+  
+}
+.social{
+   margin: auto;
+   padding:2% 10%;
+
+}
+.soc-link{
+  
+   margin:5% 3px;
+   
+}
+.btn
+{
+  margin: 5px;
+  padding: 0rem,2rem;
+}   
+
+
+
+.footer {
+  
+  padding: 5%;
+  color: #bbb;
+ 
+  
+
+}
+
+ section{
+  margin-top: 50px ;
+  text-align: center;
+ } 
+
+.navbar {
+    
+    width: 100%;
+    height: auto;
+    background-color:black;
+    position: fixed;
+  
+    top:0px;
+    left: 0px;
+    z-index:5 ;
+
+
+}
+
+ .sec-topic
+{
+  margin: 10px 15px;
+  top: 10%;
+  text-align: center;
+  padding: 5%;
+  color:aquamarine;
+} 
+
+
+ #carouselExampleIndicators{
+  margin:5% 15%;
+  padding: 10%;
+  background-color: #1b1919;
+  
+} 
+
+
+
+a {
+  text-decoration:none;
+  color:white;
+  font-weight: bolder;
+}
+
+
+#projects{
+   
+  display: grid;
+  /* gap: 50px 100px; */
+  width:100%;
+  margin: 10px;
+ 
+
+}
+.pro-cards
+{
+  
+  display: inline-flex;
+  margin:5% 2%;
+  position: relative;
+  
+
+}
+/* @media only screen and (max-width: 1080) {
+  .pro-cards {
+    padding-right:100px;
+  }
+} */
+.nav-item {
+
+  font-size: 1.5rem;
+  padding:2% ;
+  position: relative;
+  margin: auto;
+
+
+  
+  
+}
+.navbar-toggler{
+  left: 45%;
+}
+
+
+.pro {
+
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 300px; 
+}
+.flip-card:hover
+{transform: scale(1.3);
+box-shadow: 10px 15px 10px rgb(221, 219, 216);
+z-index: 2;}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+} 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+ 
+} 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: rgb(233, 225, 225);
+  color: black;
+  
+} 
+.flip-card-back {
+  background-color: rgb(7, 26, 45);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+body { margin: 0; }
+
+
+.progress { 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 10px; 
+  background-color: rgb(214, 146, 30);
+  z-index:10 ; 
+  transition: all linear 0.1s; 
+  min-width: 1%; }
+
+body { 
+  width: 100%; 
+  /* height: 1vh;  */
+  margin-bottom: 5px; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; }
